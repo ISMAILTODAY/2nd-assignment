@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'work sans';
+    
 }
 /* Header-section */
 
@@ -361,7 +362,7 @@ ul{
         overflow: hidden;
     }
     .main-description-item p{
-        width: 100%;
+        width: 350px;
      
     }
     .section-img img{
@@ -374,27 +375,35 @@ ul{
         flex-direction: column;
     }
     .sub-section-containar{
-        width: 100%;
+      width: 100%;
         overflow: hidden;
         margin-left: 0;
     }
     .description-containar{
         width: 100%;
         overflow: hidden;
+      
     }
     .title-1{
         width: 100%;
-        padding:0;
+        border-left: 0;
+        padding: 0;
+        padding-left: 5px;
+        
         
     }
     .description{
-        width: 100%;
+        width: 350px;
+        padding-left: 5px;
     }
     .sub-section-item h1{
-        width: 100%;
+        width: 350px;
+        padding-left: 5px;
     }
     .sub-section-item p{
-        width: 100%;
+        width: 350px;
+      
+        padding-left: 5px;
     }
     .section-btn {
         left: 100px;
@@ -403,9 +412,10 @@ ul{
         width: 100%;
     }
     .service-title , .service-description{
-        margin-left: 0;
+        margin-left: 0px;
         width: 100%;
     }
+
     .service-description h1{
         width: 100%;
     }
@@ -434,6 +444,9 @@ ul{
     width: 100%;
     padding: 0;
  }
+ .sopnspors-description p{
+    width: 350px;
+ }
  .sponspors-logo{
     flex-direction: column;
     margin-left: 40px;
@@ -442,8 +455,11 @@ ul{
     width: 300px;
     height: 100px;
  }
+ .enrgy{
+ 
+ }
  .copyright {
-    width: 100%;
+    width: 350px;
  }
 }
  

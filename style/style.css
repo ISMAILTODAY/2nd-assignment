@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'work sans';
-  /* border: 1px solid red;   */
 }
 /* Header-section */
 
@@ -26,11 +25,14 @@ ul{
 ul li{
      color: #424242;
      font-size: 1.2em;
+     padding: 10px;
+     border-radius: 10px;
+     transition: 0.9s;
 }
 ul li:hover{
-    background-color: #383083 ;
+    background-image: linear-gradient(to top, rgb(250, 23, 99), #383083 );
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
 }
@@ -61,7 +63,7 @@ ul li:hover{
     margin-left: 35rem;
 }
 .header-btn:hover{
-    background-color:  #786ce8;
+    background-image:linear-gradient(to top, #786ce8, rgb(163, 4, 177))  ;
     cursor: pointer;
 }
 .banner{
@@ -198,6 +200,30 @@ main{
 }
 
 
+/* top services section */
+.service-title{
+    width: 400px;
+    margin-bottom: 50px;
+    margin-left: 170px;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+  .service-description{
+    width: 700px;
+    height: 120px;
+   
+    margin-left: 170px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0 5px 2px 5px #FAFAFA;
+  }
+  .service-description h1{
+    font-weight: 800;
+    padding-bottom: 20px;
+  }
+
+
+
 /* footer section */
 
 .footer-section{
@@ -215,12 +241,14 @@ main{
     width: 400px;
     height: 50px;
     margin-top: 20px;
+    font-size: 14px;
     color: #727272;
 }
 .cliant-data{
     display: flex;
     justify-content: center;
     gap: 50px;
+    
 }
 .cliant-data div{
     text-align: center;
@@ -228,6 +256,7 @@ main{
     height: 200px;
     border: 1px solid #FF900E;
     border-radius: 5px;
+   
 }
 .cliant-data div img{
     margin-top: 30px;
@@ -236,3 +265,185 @@ main{
     font-size: 1em;
     color: #727272;
 }
+  
+.cliant-data div:hover{
+    background-image: linear-gradient(45deg, red, rgb(41, 38, 245));
+   
+    color: white;
+    transition: 0.5s;
+}
+/* sponspors details */
+
+.sopnspors-description{
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.sopnspors-description h1{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+.sopnspors-description p{
+    font-size: 14px;
+    color: #727272;
+    margin-top: 20px;
+}
+.sponspors-logo{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+   
+}
+.sponspors-logo img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.copyright{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FFF4E7;
+    width: 1000px;
+    height: 50px;
+    border-radius: 5px;
+}
+.copyright p{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+/* media quary */
+
+
+/* header-section */
+
+@media only screen and (max-width:688px){
+.nav-item, ul{
+flex-direction: column;
+}
+ul{
+    gap: 0px;
+}
+   .header-title, .header-description{
+    width: 100%;
+   } 
+   .header-btn{
+    margin-top: 20px;
+    margin-left: 110px;
+   }
+   .banner{
+    width: 100%;
+    margin-left: 0;
+   }
+}
+ /* main-section */
+
+ @media only screen and (max-width:688px) {
+    .main-section-item{
+       
+        flex-direction: column; 
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .img-containar{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .main-description-item h1{
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .main-description-item p{
+        width: 100%;
+     
+    }
+    .section-img img{
+        width: 100%;
+    }
+    .btn-2{
+        margin-left: 105px;
+    }
+    .section-item-containar{
+        flex-direction: column;
+    }
+    .sub-section-containar{
+        width: 100%;
+        overflow: hidden;
+        margin-left: 0;
+    }
+    .description-containar{
+        width: 100%;
+        overflow: hidden;
+    }
+    .title-1{
+        width: 100%;
+        padding:0;
+        
+    }
+    .description{
+        width: 100%;
+    }
+    .sub-section-item h1{
+        width: 100%;
+    }
+    .sub-section-item p{
+        width: 100%;
+    }
+    .section-btn {
+        left: 100px;
+    }
+    .service-containar{
+        width: 100%;
+    }
+    .service-title , .service-description{
+        margin-left: 0;
+        width: 100%;
+    }
+    .service-description h1{
+        width: 100%;
+    }
+ }
+
+ /* footer section */
+
+@media only screen and (max-width:688px) {
+
+    .footer-item{
+        width: 100%;
+        margin-left: 0;
+     }
+     .footer-item p{
+    width: 100%;
+ }
+ .cliant-data{
+    flex-direction: column;
+    margin-left: 90px;
+ }
+ .sopnspors-description{
+    width: 100%;
+    padding: 0;
+ }
+ .sopnspors-description h1{
+    width: 100%;
+    padding: 0;
+ }
+ .sponspors-logo{
+    flex-direction: column;
+    margin-left: 40px;
+ }
+ .sponspors-logo img{
+    width: 300px;
+    height: 100px;
+ }
+ .copyright {
+    width: 100%;
+ }
+}
+ 

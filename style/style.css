@@ -415,6 +415,7 @@ ul{
     .service-title , .service-description{
         margin-left: 0px;
         width: 100%;
+      
     }
 
     .service-description h1{
@@ -427,6 +428,7 @@ ul{
 @media only screen and (max-width:688px) {
 
     .footer-item{
+        margin-top: 100px;
         width: 100%;
         margin-left: 0;
      }
